@@ -1,0 +1,4 @@
+datasets/
+web/static/
+runs/
+*.pt

@@ -1,0 +1,739 @@
+2026-02-20 17:47:46,659 - __main__ - INFO - 📦 WEIGHTS_PATH : rtdetr-l.pt
+2026-02-20 17:47:46,660 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-20 17:47:46,661 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-20 17:47:46,661 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: rtdetr-l.pt
+2026-02-20 17:48:37,257 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-20 17:48:37,264 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5000
+2026-02-20 17:48:37,289 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://198.18.0.1:5000
+2026-02-20 17:48:37,290 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-20 17:50:35,291 - __main__ - INFO - 📦 WEIGHTS_PATH : rtdetr-l.pt
+2026-02-20 17:50:35,291 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-20 17:50:35,292 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-20 17:50:35,292 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: rtdetr-l.pt
+2026-02-20 17:50:37,200 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-20 17:50:37,204 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5000
+2026-02-20 17:50:37,217 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://198.18.0.1:5000
+2026-02-20 17:50:37,218 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-20 17:50:39,290 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:39] "GET / HTTP/1.1" 200 -
+2026-02-20 17:50:41,317 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:41] "GET / HTTP/1.1" 200 -
+2026-02-20 17:50:41,970 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:41] "GET / HTTP/1.1" 200 -
+2026-02-20 17:50:51,357 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:51] "GET / HTTP/1.1" 200 -
+2026-02-20 17:50:51,985 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:51] "GET / HTTP/1.1" 200 -
+2026-02-20 17:50:52,159 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:52] "GET / HTTP/1.1" 200 -
+2026-02-20 17:50:52,356 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:50:52] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:00,105 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:00] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-20 17:51:01,348 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:01] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:01,396 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2026-02-20 17:51:01,556 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-20 17:51:04,567 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:04] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:05,132 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:05] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:05,304 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:05] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:05,462 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:05] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:10,973 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:10] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:22,971 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:22] "GET / HTTP/1.1" 200 -
+2026-02-20 17:51:40,941 - __main__ - INFO - 图片检测完成: 2 个目标, 耗时 0.968s
+2026-02-20 17:51:40,968 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:40] "POST /predict HTTP/1.1" 200 -
+2026-02-20 17:51:41,354 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:51:41] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-20 17:52:05,538 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:52:05] "GET / HTTP/1.1" 200 -
+2026-02-20 17:52:10,357 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:52:10] "GET / HTTP/1.1" 200 -
+2026-02-20 17:52:46,716 - __main__ - INFO - 正在下载图片: https://ts1.tc.mm.bing.net/th/id/OIP-C.XY6bSdI7WWF4c1bYxJ5r9gHaHY?rs=1&pid=ImgDetMain&o=7&rm=3
+2026-02-20 17:52:48,203 - __main__ - INFO - URL 图片检测完成: 3 个目标
+2026-02-20 17:52:48,204 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:52:48] "POST /predict_url HTTP/1.1" 200 -
+2026-02-20 17:52:48,250 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:52:48] "GET /static/results/OIP-C.XY6bSdI7WWF4c1bYxJ5r9gHaHY.jpg HTTP/1.1" 200 -
+2026-02-20 17:53:11,018 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:53:11] "GET / HTTP/1.1" 200 -
+2026-02-20 17:53:38,757 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.993s
+2026-02-20 17:53:38,759 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:53:38] "POST /predict HTTP/1.1" 200 -
+2026-02-20 17:53:38,821 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:53:38] "GET /static/results/00034.png HTTP/1.1" 200 -
+2026-02-20 17:53:58,304 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:53:58] "GET / HTTP/1.1" 200 -
+2026-02-20 17:54:08,517 - __main__ - INFO - 正在下载图片: https://c8.alamy.com/comp/BNPA51/road-traffic-works-warning-signs-munich-germany-BNPA51.jpg
+2026-02-20 17:54:10,889 - __main__ - INFO - URL 图片检测完成: 8 个目标
+2026-02-20 17:54:10,891 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:54:10] "POST /predict_url HTTP/1.1" 200 -
+2026-02-20 17:54:10,905 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:54:10] "GET /static/results/road-traffic-works-warning-signs-munich-germany-BNPA51.jpg HTTP/1.1" 200 -
+2026-02-20 17:57:47,954 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 17:57:47] "GET / HTTP/1.1" 200 -
+2026-02-20 17:58:05,211 - __main__ - INFO - 视频信息: 1920x1080, 29fps, 23992帧
+2026-02-20 17:59:28,787 - __main__ - INFO - 已处理 100/23992 帧
+2026-02-20 18:00:51,623 - __main__ - INFO - 已处理 200/23992 帧
+2026-02-20 18:01:00,501 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:01:00] "GET / HTTP/1.1" 200 -
+2026-02-20 18:01:21,976 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 1.654s
+2026-02-20 18:01:21,979 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:01:21] "POST /predict HTTP/1.1" 200 -
+2026-02-20 18:01:22,067 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:01:22] "GET /static/results/collection-road-signs-germany-collection-road-signs-germany-one-hundred-ninety-five-highly-detailed-fully-170471912.webp HTTP/1.1" 200 -
+2026-02-20 18:01:46,455 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:01:46] "GET / HTTP/1.1" 200 -
+2026-02-20 18:01:59,261 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 1.493s
+2026-02-20 18:01:59,264 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:01:59] "POST /predict HTTP/1.1" 200 -
+2026-02-20 18:01:59,350 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:01:59] "GET /static/results/collection-road-signs-germany-collection-road-signs-germany-one-hundred-ninety-five-highly-detailed-fully-170471912.webp HTTP/1.1" 200 -
+2026-02-20 18:02:15,876 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:02:15] "GET / HTTP/1.1" 200 -
+2026-02-20 18:02:25,185 - __main__ - INFO - 已处理 300/23992 帧
+2026-02-20 18:02:27,914 - __main__ - INFO - 图片检测完成: 2 个目标, 耗时 1.707s
+2026-02-20 18:02:27,916 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:02:27] "POST /predict HTTP/1.1" 200 -
+2026-02-20 18:02:27,997 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:02:27] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-20 18:03:55,840 - __main__ - INFO - 已处理 400/23992 帧
+2026-02-20 18:05:25,522 - __main__ - INFO - 已处理 500/23992 帧
+2026-02-20 18:06:58,744 - __main__ - INFO - 已处理 600/23992 帧
+2026-02-20 18:08:32,527 - __main__ - INFO - 已处理 700/23992 帧
+2026-02-20 18:10:09,415 - __main__ - INFO - 已处理 800/23992 帧
+2026-02-20 18:10:15,798 - __main__ - INFO - 视频信息: 1280x720, 29fps, 56帧
+2026-02-20 18:11:50,532 - __main__ - INFO - 视频处理完成: 56帧, 耗时 94.73s, FPS 0.59
+2026-02-20 18:11:50,536 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:11:50] "POST /predict_video HTTP/1.1" 200 -
+2026-02-20 18:11:50,886 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:11:50] "[35m[1mGET /static/results/traffic-sign-to-test.mp4 HTTP/1.1[0m" 206 -
+2026-02-20 18:11:50,937 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:11:50] "[35m[1mGET /static/results/traffic-sign-to-test.mp4 HTTP/1.1[0m" 206 -
+2026-02-20 18:12:26,488 - __main__ - INFO - 已处理 900/23992 帧
+2026-02-20 18:12:53,343 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 18:12:53] "GET /static/results/traffic-sign-to-test.mp4 HTTP/1.1" 200 -
+2026-02-20 18:13:53,442 - __main__ - INFO - 已处理 1000/23992 帧
+2026-02-20 22:08:21,364 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-02-20 22:08:21,365 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-20 22:08:21,365 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-20 22:08:21,365 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: runs/train/exp/weights/best.pt
+2026-02-20 22:08:24,182 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-20 22:08:24,189 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5000
+2026-02-20 22:08:24,212 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://198.18.0.1:5000
+2026-02-20 22:08:24,213 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-20 22:08:30,928 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 22:08:30] "GET / HTTP/1.1" 200 -
+2026-02-20 22:08:50,050 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.889s
+2026-02-20 22:08:50,076 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 22:08:50] "POST /predict HTTP/1.1" 200 -
+2026-02-20 22:08:50,489 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 22:08:50] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-20 22:09:26,181 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 22:09:26] "GET / HTTP/1.1" 200 -
+2026-02-20 22:09:48,136 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 1.016s
+2026-02-20 22:09:48,138 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 22:09:48] "POST /predict HTTP/1.1" 200 -
+2026-02-20 22:09:48,201 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 22:09:48] "GET /static/results/00130.png HTTP/1.1" 200 -
+2026-02-20 23:00:09,197 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:00:09] "GET / HTTP/1.1" 200 -
+2026-02-20 23:00:19,666 - __main__ - INFO - 视频信息: 1280x720, 29fps, 56帧
+2026-02-20 23:01:06,976 - __main__ - INFO - 视频处理完成: 56帧, 耗时 47.30s, FPS 1.18
+2026-02-20 23:01:06,979 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:01:06] "POST /predict_video HTTP/1.1" 200 -
+2026-02-20 23:01:07,136 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:01:07] "[35m[1mGET /static/results/traffic-sign-to-test.mp4 HTTP/1.1[0m" 206 -
+2026-02-20 23:01:07,249 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:01:07] "[35m[1mGET /static/results/traffic-sign-to-test.mp4 HTTP/1.1[0m" 206 -
+2026-02-20 23:01:50,004 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:01:50] "GET /static/results/traffic-sign-to-test.mp4 HTTP/1.1" 200 -
+2026-02-20 23:02:53,605 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:02:53] "GET / HTTP/1.1" 200 -
+2026-02-20 23:03:18,727 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.941s
+2026-02-20 23:03:18,728 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:03:18] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:03:18,790 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:03:18] "GET /static/results/02100.png HTTP/1.1" 200 -
+2026-02-20 23:03:35,650 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:03:35] "GET / HTTP/1.1" 200 -
+2026-02-20 23:03:44,386 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.872s
+2026-02-20 23:03:44,388 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:03:44] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:03:44,448 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:03:44] "GET /static/results/00075.png HTTP/1.1" 200 -
+2026-02-20 23:04:19,617 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:04:19] "GET / HTTP/1.1" 200 -
+2026-02-20 23:04:30,478 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.975s
+2026-02-20 23:04:30,479 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:04:30] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:04:30,537 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:04:30] "GET /static/results/04566.png HTTP/1.1" 200 -
+2026-02-20 23:19:21,917 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-02-20 23:19:21,918 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-20 23:19:21,918 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-20 23:19:21,919 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: runs/train/exp/weights/best.pt
+2026-02-20 23:19:24,225 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-20 23:19:24,229 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5000
+2026-02-20 23:19:24,242 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://198.18.0.1:5000
+2026-02-20 23:19:24,244 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-20 23:19:26,472 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:19:26] "GET / HTTP/1.1" 200 -
+2026-02-20 23:19:26,765 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:19:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-20 23:19:36,733 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.820s
+2026-02-20 23:19:36,754 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:19:36] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:19:37,118 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:19:37] "GET /static/results/未标题-1.png HTTP/1.1" 200 -
+2026-02-20 23:20:06,277 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:20:06] "GET / HTTP/1.1" 200 -
+2026-02-20 23:20:19,702 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.965s
+2026-02-20 23:20:19,704 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:20:19] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:20:19,745 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:20:19] "GET /static/results/collection-road-signs-germany-collection-road-signs-germany-one-hundred-ninety-five-highly-detailed-fully-170471912.webp HTTP/1.1" 200 -
+2026-02-20 23:20:25,653 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:20:25] "GET / HTTP/1.1" 200 -
+2026-02-20 23:20:36,663 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.838s
+2026-02-20 23:20:36,665 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:20:36] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:20:36,715 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:20:36] "GET /static/results/未标题-1.png HTTP/1.1" 200 -
+2026-02-20 23:21:15,536 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:21:15] "GET / HTTP/1.1" 200 -
+2026-02-20 23:21:23,288 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.969s
+2026-02-20 23:21:23,290 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:21:23] "POST /predict HTTP/1.1" 200 -
+2026-02-20 23:21:23,347 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:21:23] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-20 23:27:01,486 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:27:01] "GET / HTTP/1.1" 200 -
+2026-02-20 23:27:07,412 - __main__ - INFO - 视频信息: 626x480, 30fps, 150帧
+2026-02-20 23:28:29,065 - __main__ - INFO - 已处理 100/150 帧
+2026-02-20 23:29:08,911 - __main__ - INFO - 视频处理完成: 150帧, 耗时 121.49s, FPS 1.23
+2026-02-20 23:29:08,913 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:29:08] "POST /predict_video HTTP/1.1" 200 -
+2026-02-20 23:29:09,113 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:29:09] "[35m[1mGET /static/results/2月20日.mp4 HTTP/1.1[0m" 206 -
+2026-02-20 23:29:14,265 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:29:14] "GET /static/results/2月20日.mp4 HTTP/1.1" 200 -
+2026-02-20 23:31:37,172 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:31:37] "GET / HTTP/1.1" 200 -
+2026-02-20 23:31:47,176 - __main__ - INFO - 视频信息: 720x720, 30fps, 1092帧
+2026-02-20 23:33:08,020 - __main__ - INFO - 已处理 100/1092 帧
+2026-02-20 23:34:29,424 - __main__ - INFO - 已处理 200/1092 帧
+2026-02-20 23:35:51,140 - __main__ - INFO - 已处理 300/1092 帧
+2026-02-20 23:37:10,268 - __main__ - INFO - 已处理 400/1092 帧
+2026-02-20 23:38:29,369 - __main__ - INFO - 已处理 500/1092 帧
+2026-02-20 23:39:47,148 - __main__ - INFO - 已处理 600/1092 帧
+2026-02-20 23:41:06,660 - __main__ - INFO - 已处理 700/1092 帧
+2026-02-20 23:42:25,537 - __main__ - INFO - 已处理 800/1092 帧
+2026-02-20 23:43:43,436 - __main__ - INFO - 已处理 900/1092 帧
+2026-02-20 23:45:02,058 - __main__ - INFO - 已处理 1000/1092 帧
+2026-02-20 23:46:15,150 - __main__ - INFO - 视频处理完成: 1092帧, 耗时 867.97s, FPS 1.26
+2026-02-20 23:46:15,152 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:46:15] "POST /predict_video HTTP/1.1" 200 -
+2026-02-20 23:46:16,878 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:46:16] "[35m[1mGET /static/results/2月20日%20(1).mp4 HTTP/1.1[0m" 206 -
+2026-02-20 23:46:16,907 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:46:16] "[35m[1mGET /static/results/2月20日%20(1).mp4 HTTP/1.1[0m" 206 -
+2026-02-20 23:46:22,707 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2026 23:46:22] "GET /static/results/2月20日%20(1).mp4 HTTP/1.1" 200 -
+2026-02-21 00:09:34,666 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-02-21 00:09:34,667 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-21 00:09:34,667 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-21 00:09:34,667 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: runs/train/exp/weights/best.pt
+2026-02-21 00:09:37,296 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-21 00:09:37,301 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:6000
+2026-02-21 00:09:37,318 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:6000
+ * Running on http://198.18.0.1:6000
+2026-02-21 00:09:37,319 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 00:11:54,830 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-02-21 00:11:54,830 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-21 00:11:54,830 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-21 00:11:54,831 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: runs/train/exp/weights/best.pt
+2026-02-21 00:11:57,230 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-21 00:11:57,235 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-21 00:11:57,254 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-21 00:11:57,256 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-21 00:12:08,279 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:12:08] "GET / HTTP/1.1" 200 -
+2026-02-21 00:12:08,594 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:12:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-21 00:12:31,346 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.951s
+2026-02-21 00:12:31,373 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:12:31] "POST /predict HTTP/1.1" 200 -
+2026-02-21 00:12:31,740 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:12:31] "GET /static/results/12621.png HTTP/1.1" 200 -
+2026-02-21 00:12:36,405 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:12:36] "GET / HTTP/1.1" 200 -
+2026-02-21 00:12:59,281 - __main__ - INFO - 正在下载图片: https://pic.nximg.cn/file/20201022/24355175_100647454034_2.jpg
+2026-02-21 00:13:00,784 - __main__ - INFO - URL 图片检测完成: 1 个目标
+2026-02-21 00:13:00,785 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:13:00] "POST /predict_url HTTP/1.1" 200 -
+2026-02-21 00:13:00,825 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:13:00] "GET /static/results/24355175_100647454034_2.jpg HTTP/1.1" 200 -
+2026-02-21 00:14:50,689 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:14:50] "GET / HTTP/1.1" 200 -
+2026-02-21 00:14:55,155 - __main__ - INFO - 正在下载图片: https://img95.699pic.com/photo/60071/9893.jpg_wh860.jpg
+2026-02-21 00:14:56,523 - __main__ - INFO - URL 图片检测完成: 1 个目标
+2026-02-21 00:14:56,524 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:14:56] "POST /predict_url HTTP/1.1" 200 -
+2026-02-21 00:14:56,540 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:14:56] "GET /static/results/9893.jpg_wh860.jpg HTTP/1.1" 200 -
+2026-02-21 00:15:48,509 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:15:48] "GET / HTTP/1.1" 200 -
+2026-02-21 00:15:51,740 - __main__ - INFO - 正在下载图片: https://img95.699pic.com/photo/60022/9735.jpg_wh860.jpg
+2026-02-21 00:15:53,113 - __main__ - INFO - URL 图片检测完成: 1 个目标
+2026-02-21 00:15:53,114 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:15:53] "POST /predict_url HTTP/1.1" 200 -
+2026-02-21 00:15:53,130 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:15:53] "GET /static/results/9735.jpg_wh860.jpg HTTP/1.1" 200 -
+2026-02-21 00:16:42,336 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:16:42] "GET / HTTP/1.1" 200 -
+2026-02-21 00:16:45,812 - __main__ - INFO - 正在下载图片: https://ts1.tc.mm.bing.net/th/id/OIP-C.gCtv9VW6kS69jHv0xdHezwHaIY?rs=1&pid=ImgDetMain&o=7&rm=3
+2026-02-21 00:16:47,194 - __main__ - INFO - URL 图片检测完成: 1 个目标
+2026-02-21 00:16:47,195 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:16:47] "POST /predict_url HTTP/1.1" 200 -
+2026-02-21 00:16:47,214 - werkzeug - INFO - 127.0.0.1 - - [21/Feb/2026 00:16:47] "GET /static/results/OIP-C.gCtv9VW6kS69jHv0xdHezwHaIY.jpg HTTP/1.1" 200 -
+2026-02-22 22:23:44,586 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-02-22 22:23:44,587 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:23:44,587 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:23:44,588 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: runs/train/exp/weights/best.pt
+2026-02-22 22:23:46,865 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-22 22:23:46,869 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-22 22:23:46,882 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-22 22:23:46,883 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-22 22:23:52,002 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:23:52] "GET / HTTP/1.1" 200 -
+2026-02-22 22:23:52,411 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:23:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-02-22 22:24:08,953 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.875s
+2026-02-22 22:24:08,980 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:24:08] "POST /predict HTTP/1.1" 200 -
+2026-02-22 22:24:09,435 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:24:09] "GET /static/results/00087.png HTTP/1.1" 200 -
+2026-02-22 22:24:51,281 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:24:51] "GET / HTTP/1.1" 200 -
+2026-02-22 22:24:56,286 - __main__ - INFO - 正在下载图片: https://pic.52112.com/180309/180309_9/9GI04Tc5MO_small.jpg
+2026-02-22 22:24:57,827 - __main__ - INFO - URL 图片检测完成: 0 个目标
+2026-02-22 22:24:57,829 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:24:57] "POST /predict_url HTTP/1.1" 200 -
+2026-02-22 22:24:57,847 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:24:57] "GET /static/results/9GI04Tc5MO_small.jpg HTTP/1.1" 200 -
+2026-02-22 22:25:12,296 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:25:12] "GET / HTTP/1.1" 200 -
+2026-02-22 22:29:13,322 - __main__ - INFO - 📦 WEIGHTS_PATH : rtdetr-l.pt
+2026-02-22 22:29:13,322 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:29:13,323 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:29:13,323 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: rtdetr-l.pt
+2026-02-22 22:29:15,202 - __main__ - INFO - ✅ RT-DETR 模型加载成功
+2026-02-22 22:29:15,206 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-22 22:29:15,217 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-22 22:29:15,218 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-22 22:29:19,009 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:29:19] "GET / HTTP/1.1" 200 -
+2026-02-22 22:29:23,847 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:29:23] "[33mGET /，它经过训练过了，还检测不出。 HTTP/1.1[0m" 404 -
+2026-02-22 22:29:32,927 - __main__ - INFO - 正在下载图片: https://pic.52112.com/180309/180309_9/9GI04Tc5MO_small.jpg
+2026-02-22 22:29:34,419 - __main__ - INFO - URL 图片检测完成: 19 个目标
+2026-02-22 22:29:34,445 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:29:34] "POST /predict_url HTTP/1.1" 200 -
+2026-02-22 22:29:34,761 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:29:34] "GET /static/results/9GI04Tc5MO_small.jpg HTTP/1.1" 200 -
+2026-02-22 22:32:21,156 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:32:21] "GET / HTTP/1.1" 200 -
+2026-02-22 22:32:24,346 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-22 22:32:26,509 - __main__ - INFO - URL 图片检测完成: 7 个目标
+2026-02-22 22:32:26,512 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:32:26] "POST /predict_url HTTP/1.1" 200 -
+2026-02-22 22:32:26,530 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 22:32:26] "GET /static/results/537.jpg!detail.v1.jpg HTTP/1.1" 200 -
+2026-02-22 22:43:45,647 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:43:45,648 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:43:45,648 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:43:45,648 - __main__ - INFO - ⏳ 正在加载 RT-DETR 模型: best.pt
+2026-02-22 22:43:45,658 - __main__ - ERROR - ❌ 模型加载失败: ERROR  best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+Traceback (most recent call last):
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1455, in torch_safe_load
+    ckpt = torch_load(file, map_location="cpu")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\utils\patches.py", line 158, in torch_load
+    return torch.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 1549, in load
+    return _load(
+           ^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2143, in _load
+    result = unpickler.load()
+             ^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2132, in find_class
+    return super().find_class(mod_name, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'models'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 60, in <module>
+    model = RTDETR(WEIGHTS_PATH)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\models\rtdetr\model.py", line 47, in __init__
+    super().__init__(model=model, task="detect")
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\model.py", line 144, in __init__
+    self._load(model, task=task)
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\model.py", line 283, in _load
+    self.model, self.ckpt = load_checkpoint(weights)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1507, in load_checkpoint
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1459, in torch_safe_load
+    raise TypeError(
+TypeError: ERROR  best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+2026-02-22 22:49:23,502 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:49:23,502 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:49:23,502 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:49:23,503 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: best.pt
+2026-02-22 22:49:23,510 - __main__ - ERROR - ❌ 模型加载失败: ERROR  best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+Traceback (most recent call last):
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1455, in torch_safe_load
+    ckpt = torch_load(file, map_location="cpu")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\utils\patches.py", line 158, in torch_load
+    return torch.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 1549, in load
+    return _load(
+           ^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2143, in _load
+    result = unpickler.load()
+             ^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2132, in find_class
+    return super().find_class(mod_name, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'models'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 74, in <module>
+    model = _load_model(WEIGHTS_PATH, MODEL_TYPE)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 64, in _load_model
+    return YOLO(weights)
+           ^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\models\yolo\model.py", line 76, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\model.py", line 144, in __init__
+    self._load(model, task=task)
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\model.py", line 283, in _load
+    self.model, self.ckpt = load_checkpoint(weights)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1507, in load_checkpoint
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1459, in torch_safe_load
+    raise TypeError(
+TypeError: ERROR  best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+2026-02-22 22:50:34,557 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:50:34,558 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:50:34,558 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:50:34,558 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: best.pt
+2026-02-22 22:50:34,565 - __main__ - ERROR - ❌ 模型加载失败: ERROR  best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+Traceback (most recent call last):
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1455, in torch_safe_load
+    ckpt = torch_load(file, map_location="cpu")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\utils\patches.py", line 158, in torch_load
+    return torch.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 1549, in load
+    return _load(
+           ^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2143, in _load
+    result = unpickler.load()
+             ^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2132, in find_class
+    return super().find_class(mod_name, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'models'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 74, in <module>
+    model = _load_model(WEIGHTS_PATH, MODEL_TYPE)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 64, in _load_model
+    return YOLO(weights)
+           ^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\models\yolo\model.py", line 76, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\model.py", line 144, in __init__
+    self._load(model, task=task)
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\model.py", line 283, in _load
+    self.model, self.ckpt = load_checkpoint(weights)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1507, in load_checkpoint
+    ckpt, weight = torch_safe_load(weight)  # load ckpt
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\nn\tasks.py", line 1459, in torch_safe_load
+    raise TypeError(
+TypeError: ERROR  best.pt appears to be an Ultralytics YOLOv5 model originally trained with https://github.com/ultralytics/yolov5.
+This model is NOT forwards compatible with YOLOv8 at https://github.com/ultralytics/ultralytics.
+Recommend fixes are to train a new model using the latest 'ultralytics' package or to run a command with an official Ultralytics model, i.e. 'yolo predict model=yolo26n.pt'
+2026-02-22 22:52:16,615 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:52:16,615 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:52:16,616 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:52:16,616 - __main__ - INFO - ⏳ 正在加载模型 [YOLOV5]: best.pt
+2026-02-22 22:52:16,616 - __main__ - INFO - 🔍 使用 torch.hub 加载 YOLOv5 模型
+2026-02-22 22:52:22,205 - __main__ - ERROR - ❌ 模型加载失败: No module named 'pandas'
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 81, in <module>
+    model = _load_model(WEIGHTS_PATH, MODEL_TYPE)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 66, in _load_model
+    m = torch.hub.load('ultralytics/yolov5', 'custom',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 656, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 689, in _load_local
+    model = entry(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 135, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 55, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\models\common.py", line 18, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+2026-02-22 22:53:11,244 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:53:11,245 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:53:11,245 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:53:11,245 - __main__ - INFO - ⏳ 正在加载模型 [YOLOV5]: best.pt
+2026-02-22 22:53:11,245 - __main__ - INFO - 🔍 使用 torch.hub 加载 YOLOv5 模型
+2026-02-22 22:53:12,643 - __main__ - ERROR - ❌ 模型加载失败: No module named 'tqdm'
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 81, in <module>
+    model = _load_model(WEIGHTS_PATH, MODEL_TYPE)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 66, in _load_model
+    m = torch.hub.load('ultralytics/yolov5', 'custom',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 656, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 689, in _load_local
+    model = entry(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 135, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 55, in _create
+    from models.common import AutoShape, DetectMultiBackend
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\models\common.py", line 39, in <module>
+    from utils.dataloaders import exif_transpose, letterbox
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\utils\dataloaders.py", line 27, in <module>
+    from tqdm import tqdm
+ModuleNotFoundError: No module named 'tqdm'
+2026-02-22 22:53:46,327 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:53:46,328 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:53:46,328 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:53:46,328 - __main__ - INFO - ⏳ 正在加载模型 [YOLOV5]: best.pt
+2026-02-22 22:53:46,328 - __main__ - INFO - 🔍 使用 torch.hub 加载 YOLOv5 模型
+2026-02-22 22:53:48,541 - __main__ - ERROR - ❌ 模型加载失败: No module named 'seaborn'
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 81, in <module>
+    model = _load_model(WEIGHTS_PATH, MODEL_TYPE)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 66, in _load_model
+    m = torch.hub.load('ultralytics/yolov5', 'custom',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 656, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 689, in _load_local
+    model = entry(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 135, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 57, in _create
+    from models.yolo import ClassificationModel, DetectionModel, SegmentationModel
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\models\yolo.py", line 55, in <module>
+    from utils.plots import feature_visualization
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\utils\plots.py", line 15, in <module>
+    import seaborn as sn
+ModuleNotFoundError: No module named 'seaborn'
+2026-02-22 22:54:10,363 - __main__ - INFO - 📦 WEIGHTS_PATH : best.pt
+2026-02-22 22:54:10,364 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 22:54:10,364 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 22:54:10,364 - __main__ - INFO - ⏳ 正在加载模型 [YOLOV5]: best.pt
+2026-02-22 22:54:10,364 - __main__ - INFO - 🔍 使用 torch.hub 加载 YOLOv5 模型
+2026-02-22 22:54:20,630 - __main__ - ERROR - ❌ 模型加载失败: cannot instantiate 'PosixPath' on your system. Cache may be out of date, try `force_reload=True` or see https://docs.ultralytics.com/yolov5/tutorials/pytorch_hub_model_loading for help.
+Traceback (most recent call last):
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 71, in _create
+    model = DetectMultiBackend(path, device=device, fuse=autoshape)  # detection model
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\models\common.py", line 484, in __init__
+    model = attempt_load(weights if isinstance(weights, list) else w, device=device, inplace=True, fuse=fuse)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\models\experimental.py", line 98, in attempt_load
+    ckpt = torch_load(attempt_download(w), map_location="cpu")  # load
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\utils\patches.py", line 158, in torch_load
+    return torch.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 1549, in load
+    return _load(
+           ^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2143, in _load
+    result = unpickler.load()
+             ^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\pathlib.py", line 873, in __new__
+    raise NotImplementedError("cannot instantiate %r on your system"
+NotImplementedError: cannot instantiate 'PosixPath' on your system
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 86, in _create
+    model = attempt_load(path, device=device, fuse=False)  # arbitrary model
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\models\experimental.py", line 98, in attempt_load
+    ckpt = torch_load(attempt_download(w), map_location="cpu")  # load
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\utils\patches.py", line 158, in torch_load
+    return torch.load(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 1549, in load
+    return _load(
+           ^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\serialization.py", line 2143, in _load
+    result = unpickler.load()
+             ^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\pathlib.py", line 873, in __new__
+    raise NotImplementedError("cannot instantiate %r on your system"
+NotImplementedError: cannot instantiate 'PosixPath' on your system
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 81, in <module>
+    model = _load_model(WEIGHTS_PATH, MODEL_TYPE)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 66, in _load_model
+    m = torch.hub.load('ultralytics/yolov5', 'custom',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 656, in load
+    model = _load_local(repo_or_dir, model, *args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\torch\hub.py", line 689, in _load_local
+    model = entry(*args, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 135, in custom
+    return _create(path, autoshape=autoshape, verbose=_verbose, device=device)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\torch_cache\hub\ultralytics_yolov5_master\hubconf.py", line 104, in _create
+    raise Exception(s) from e
+Exception: cannot instantiate 'PosixPath' on your system. Cache may be out of date, try `force_reload=True` or see https://docs.ultralytics.com/yolov5/tutorials/pytorch_hub_model_loading for help.
+2026-02-22 23:19:32,421 - __main__ - INFO - 📦 WEIGHTS_PATH : yolov8s.pt
+2026-02-22 23:19:32,422 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 23:19:32,422 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 23:19:32,422 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: yolov8s.pt
+2026-02-22 23:19:32,928 - __main__ - INFO - ✅ 模型加载成功: YOLO
+2026-02-22 23:19:32,931 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-22 23:19:32,944 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-22 23:19:32,945 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-22 23:19:35,903 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:19:35] "GET / HTTP/1.1" 200 -
+2026-02-22 23:19:43,732 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-22 23:19:44,476 - __main__ - INFO - URL 图片检测完成: 6 个目标
+2026-02-22 23:19:44,510 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:19:44] "POST /predict_url HTTP/1.1" 200 -
+2026-02-22 23:19:44,839 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:19:44] "GET /static/results/537.jpg!detail.v1.jpg HTTP/1.1" 200 -
+2026-02-22 23:20:26,310 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-02-22 23:20:26,311 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 23:20:26,311 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 23:20:26,311 - __main__ - INFO - ⏳ 正在加载模型 [RTDETR]: runs/train/exp/weights/best.pt
+2026-02-22 23:20:28,500 - __main__ - INFO - ✅ 模型加载成功: RTDETR
+2026-02-22 23:20:28,505 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-22 23:20:28,521 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-22 23:20:28,522 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-22 23:20:30,975 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:20:30] "GET / HTTP/1.1" 200 -
+2026-02-22 23:20:33,779 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:20:33] "[33mGET /runs/train/exp/weights/best.pt HTTP/1.1[0m" 404 -
+2026-02-22 23:20:39,497 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-22 23:20:40,854 - __main__ - INFO - URL 图片检测完成: 0 个目标
+2026-02-22 23:20:40,876 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:20:40] "POST /predict_url HTTP/1.1" 200 -
+2026-02-22 23:20:41,199 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:20:41] "GET /static/results/537.jpg!detail.v1.jpg HTTP/1.1" 200 -
+2026-02-22 23:21:03,974 - __main__ - INFO - 📦 WEIGHTS_PATH : rtdetr-l.pt
+2026-02-22 23:21:03,975 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-22 23:21:03,975 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-22 23:21:03,975 - __main__ - INFO - ⏳ 正在加载模型 [RTDETR]: rtdetr-l.pt
+2026-02-22 23:21:06,043 - __main__ - INFO - ✅ 模型加载成功: RTDETR
+2026-02-22 23:21:06,047 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-22 23:21:06,066 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-22 23:21:06,067 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-22 23:21:07,310 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:21:07] "GET / HTTP/1.1" 200 -
+2026-02-22 23:21:15,031 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-22 23:21:16,427 - __main__ - INFO - URL 图片检测完成: 7 个目标
+2026-02-22 23:21:16,450 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:21:16] "POST /predict_url HTTP/1.1" 200 -
+2026-02-22 23:21:16,785 - werkzeug - INFO - 127.0.0.1 - - [22/Feb/2026 23:21:16] "GET /static/results/537.jpg!detail.v1.jpg HTTP/1.1" 200 -
+2026-02-23 00:09:59,349 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:09:59,349 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-23 00:09:59,349 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-23 00:09:59,349 - __main__ - INFO - ⏳ 正在加载模型 [RTDETR]: runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:09:59,900 - __main__ - INFO - ✅ 模型加载成功: RTDETR
+2026-02-23 00:09:59,905 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-23 00:10:02,797 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.3.7:5001
+2026-02-23 00:10:02,797 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-23 00:10:05,198 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:05] "GET / HTTP/1.1" 200 -
+2026-02-23 00:10:13,011 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-23 00:10:13,829 - __main__ - ERROR - URL 图片检测失败: 8164
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 269, in predict_url
+    annotated_img, stats = run_detection(img0, conf_thres, iou_thres)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 119, in run_detection
+    annotated_img = result.plot()   # 内置绘图，返回 BGR ndarray
+                    ^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\results.py", line 536, in plot
+    name = ("" if id is None else f"id:{id} ") + names[c]
+                                                 ~~~~~^^^
+KeyError: 8164
+2026-02-23 00:10:13,834 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:13] "[35m[1mPOST /predict_url HTTP/1.1[0m" 500 -
+2026-02-23 00:10:18,754 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-23 00:10:19,605 - __main__ - ERROR - URL 图片检测失败: 8164
+Traceback (most recent call last):
+  File "d:\traffic-sign-rtdetr\web\app.py", line 269, in predict_url
+    annotated_img, stats = run_detection(img0, conf_thres, iou_thres)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\traffic-sign-rtdetr\web\app.py", line 119, in run_detection
+    annotated_img = result.plot()   # 内置绘图，返回 BGR ndarray
+                    ^^^^^^^^^^^^^
+  File "D:\traffic-sign-rtdetr-env\Lib\site-packages\ultralytics\engine\results.py", line 536, in plot
+    name = ("" if id is None else f"id:{id} ") + names[c]
+                                                 ~~~~~^^^
+KeyError: 8164
+2026-02-23 00:10:19,609 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:19] "[35m[1mPOST /predict_url HTTP/1.1[0m" 500 -
+2026-02-23 00:10:43,333 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:10:43,333 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-23 00:10:43,334 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-23 00:10:43,334 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:10:43,902 - __main__ - INFO - ✅ 模型加载成功: YOLO
+2026-02-23 00:10:43,906 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-23 00:10:46,775 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://192.168.3.7:5001
+2026-02-23 00:10:46,775 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-23 00:10:47,468 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-23 00:10:48,182 - __main__ - INFO - URL 图片检测完成: 0 个目标
+2026-02-23 00:10:48,206 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:48] "POST /predict_url HTTP/1.1" 200 -
+2026-02-23 00:10:48,511 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:48] "GET /static/results/537.jpg!detail.v1.jpg HTTP/1.1" 200 -
+2026-02-23 00:10:52,432 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:52] "GET / HTTP/1.1" 200 -
+2026-02-23 00:10:56,016 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:10:56] "[33mGET /yolo HTTP/1.1[0m" 404 -
+2026-02-23 00:11:06,144 - __main__ - INFO - 正在下载图片: https://imgs.699pic.com/images/600/832/537.jpg!detail.v1
+2026-02-23 00:11:06,825 - __main__ - INFO - URL 图片检测完成: 0 个目标
+2026-02-23 00:11:06,827 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:11:06] "POST /predict_url HTTP/1.1" 200 -
+2026-02-23 00:11:06,839 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:11:06] "GET /static/results/537.jpg!detail.v1.jpg HTTP/1.1" 200 -
+2026-02-23 00:12:08,555 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:08] "GET / HTTP/1.1" 200 -
+2026-02-23 00:12:15,138 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.351s
+2026-02-23 00:12:15,139 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:15] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:12:15,195 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:15] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:12:29,084 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.193s
+2026-02-23 00:12:29,085 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:29] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:12:29,132 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:29] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:12:32,230 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.213s
+2026-02-23 00:12:32,232 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:32] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:12:32,282 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:32] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:12:37,252 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:37] "GET / HTTP/1.1" 200 -
+2026-02-23 00:12:50,656 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.288s
+2026-02-23 00:12:50,658 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:50] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:12:50,723 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:12:50] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:14:10,842 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.263s
+2026-02-23 00:14:10,843 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:14:10] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:14:10,908 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:14:10] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:16:34,265 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:16:34] "GET / HTTP/1.1" 200 -
+2026-02-23 00:16:40,502 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.343s
+2026-02-23 00:16:40,504 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:16:40] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:16:40,567 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:16:40] "GET /static/results/00001.png HTTP/1.1" 200 -
+2026-02-23 00:17:02,663 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:17:02] "GET / HTTP/1.1" 200 -
+2026-02-23 00:17:06,662 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.239s
+2026-02-23 00:17:06,663 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:17:06] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:17:06,743 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:17:06] "GET /static/results/00022.png HTTP/1.1" 200 -
+2026-02-23 00:19:56,148 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:19:56,149 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-23 00:19:56,149 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-23 00:19:56,149 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:19:56,809 - __main__ - INFO - ✅ 模型加载成功: YOLO
+2026-02-23 00:19:56,813 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-23 00:19:56,831 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-23 00:19:56,832 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-23 00:20:02,137 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.220s
+2026-02-23 00:20:02,165 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:20:02] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:20:02,626 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:20:02] "GET /static/results/00022.png HTTP/1.1" 200 -
+2026-02-23 00:20:15,195 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:20:15] "GET / HTTP/1.1" 200 -
+2026-02-23 00:20:19,754 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.222s
+2026-02-23 00:20:19,755 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:20:19] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:20:19,816 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:20:19] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:21:48,301 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.290s
+2026-02-23 00:21:48,303 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:21:48] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:21:48,360 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:21:48] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-02-23 00:21:57,390 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:21:57,391 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-02-23 00:21:57,391 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-02-23 00:21:57,391 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: runs/train/exp_yolov8/weights/best.pt
+2026-02-23 00:21:57,930 - __main__ - INFO - ✅ 模型加载成功: YOLO
+2026-02-23 00:21:57,934 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-02-23 00:21:57,949 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-02-23 00:21:57,950 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-02-23 00:22:00,648 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.236s
+2026-02-23 00:22:00,682 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:22:00] "POST /predict HTTP/1.1" 200 -
+2026-02-23 00:22:01,031 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:22:01] "GET /static/results/00006.png HTTP/1.1" 200 -

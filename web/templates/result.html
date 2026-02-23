@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ 检测结果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .result-content {
+            padding: 30px;
+        }
+
+        .result-section {
+            margin-bottom: 30px;
+        }
+
+        .result-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .result-image-container {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fafafa;
+            padding: 20px;
+        }
+
+        .result-image {
+            max-width: 800px;
+            max-height: 600px;
+            min-width: 300px;
+            min-height: 200px;
+            width: auto;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .result-video-container {
+            text-align: center;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fafafa;
+            padding: 20px;
+        }
+
+        .result-video {
+            max-width: 100%;
+            max-height: 600px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .stats-container {
+            background: #f0f8ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #4facfe;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #4facfe;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .detections-list {
+            background: #fafafa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .detection-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background: white;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            border: 1px solid #eee;
+            transition: all 0.2s ease;
+        }
+
+        .detection-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .detection-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .detection-confidence {
+            color: #4facfe;
+            font-weight: 500;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1em;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .btn-danger:hover {
+            box-shadow: 0 5px 15px rgba(250, 112, 154, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .result-content {
+                padding: 20px;
+            }
+            
+            .button-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✅ 检测结果</h1>
+            <p>基于 RT-DETR 的智能交通标志识别</p>
+        </div>
+
+        <div class="result-content">
+            <div class="result-section">
+                <div class="result-title">检测结果预览</div>
+                {% if img_path %}
+                <div class="result-image-container">
+                    <img src="{{ url_for('static', filename='results/' + img_path.split('/')[-1]) }}" 
+                         class="result-image" alt="检测结果">
+                </div>
+                {% elif video_path %}
+                <div class="result-video-container">
+                    <video controls class="result-video">
+                        <source src="{{ url_for('static', filename='results/' + video_path.split('/')[-1]) }}" 
+                                type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="stats-container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-value">{{ detection_count }}</div>
+                        <div class="stat-label">检测到的标志数量</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">{{ unique_classes_count }}</div>
+                        <div class="stat-label">不同类型标志</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">{{ avg_confidence|round(2) }}%</div>
+                        <div class="stat-label">平均置信度</div>
+                    </div>
+                    {% if anomaly_count is defined and anomaly_count > 0 %}
+                    <div class="stat-item">
+                        <div class="stat-value">{{ anomaly_count }}</div>
+                        <div class="stat-label">未知标志数量</div>
+                    </div>
+                    {% endif %}
+                    {% if inference_time is defined %}
+                    <div class="stat-item">
+                        <div class="stat-value">{{ (inference_time * 1000)|round(2) }} ms</div>
+                        <div class="stat-label">推理时间</div>
+                    </div>
+                    {% endif %}
+                    {% if avg_fps is defined %}
+                    <div class="stat-item">
+                        <div class="stat-value">{{ avg_fps|round(2) }}</div>
+                        <div class="stat-label">平均FPS</div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- 检测参数信息 -->
+            {% if conf_thres is defined %}
+            <div style="background: #f0f8ff; padding: 15px; border-radius: 10px; margin-bottom: 30px; border-left: 4px solid #4facfe;">
+                <h3 style="text-align: center; color: #333; margin-bottom: 10px;">检测参数</h3>
+                <div style="display: flex; justify-content: center; gap: 30px;">
+                    <div style="text-align: center;">
+                        <div style="font-weight: 600; color: #555;">置信度阈值</div>
+                        <div style="font-size: 1.2em; color: #4facfe;">{{ conf_thres }}</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-weight: 600; color: #555;">IoU阈值</div>
+                        <div style="font-size: 1.2em; color: #4facfe;">{{ iou_thres }}</div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- 检测结果可视化 -->
+            {% if detections and detections|length > 0 %}
+            <div class="result-section">
+                <div class="result-title">检测结果分布</div>
+                
+                <!-- 柱状图 -->
+                <div style="margin-bottom: 30px;">
+                    <h4 style="text-align: center; color: #555; margin-bottom: 15px;">各类别检测数量柱状图</h4>
+                    <canvas id="detection-bar-chart" width="800" height="400"></canvas>
+                </div>
+                
+                <!-- 饼图 -->
+                <div style="margin-bottom: 30px;">
+                    <h4 style="text-align: center; color: #555; margin-bottom: 15px;">各类别检测数量饼图</h4>
+                    <canvas id="detection-pie-chart" width="600" height="400"></canvas>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- 检测详情表格 -->
+            {% if detections %}
+            <div class="result-section">
+                <div class="result-title">检测详情</div>
+                <div style="overflow-x: auto;">
+                    <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.05);">
+                        <thead style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white;">
+                            <tr>
+                                <th style="padding: 15px; text-align: left;">类别名称</th>
+                                <th style="padding: 15px; text-align: center;">检测数量</th>
+                                <th style="padding: 15px; text-align: center;">占比 (%)</th>
+                                {% if detections[0].confidence is defined %}
+                                <th style="padding: 15px; text-align: center;">平均置信度 (%)</th>
+                                {% endif %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for detection in detections %}
+                            <tr style="border-bottom: 1px solid #eee; transition: all 0.2s ease;">
+                                <td style="padding: 15px;">{{ detection.name }}</td>
+                                <td style="padding: 15px; text-align: center;">{{ detection.count }}</td>
+                                <td style="padding: 15px; text-align: center;">{{ detection.percentage|round(2) }}</td>
+                                {% if detection.confidence is defined %}
+                                <td style="padding: 15px; text-align: center;">{{ detection.confidence|round(2) }}</td>
+                                {% endif %}
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- 视频处理信息 -->
+            {% if total_time is defined %}
+            <div class="result-section">
+                <div class="result-title">视频处理信息</div>
+                <div style="background: #f8f9ff; padding: 20px; border-radius: 10px; border: 1px solid #e3f2fd;">
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px;">
+                        <div style="text-align: center;">
+                            <div style="font-weight: 600; color: #555; margin-bottom: 5px;">总处理时间</div>
+                            <div style="font-size: 1.2em; color: #4facfe;">{{ total_time|round(2) }} 秒</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="font-weight: 600; color: #555; margin-bottom: 5px;">平均FPS</div>
+                            <div style="font-size: 1.2em; color: #4facfe;">{{ avg_fps|round(2) }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <div class="button-group">
+                {% if img_path %}
+                <a href="{{ url_for('static', filename='results/' + img_path.split('/')[-1]) }}" 
+                   class="btn btn-secondary" download>💾 保存结果图片</a>
+                <a href="/" class="btn">📁 上传新图片</a>
+                {% elif video_path %}
+                <a href="{{ url_for('static', filename='results/' + video_path.split('/')[-1]) }}" 
+                   class="btn btn-secondary" download>💾 保存结果视频</a>
+                <a href="/" class="btn">📁 上传新视频</a>
+                {% endif %}
+                <a href="/" class="btn btn-danger">🏠 返回首页</a>
+            </div>
+        </div>
+        
+        <!-- 添加Chart.js库 -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <script>
+            // 准备检测数据
+            const detectionData = {{ detections|tojson if detections else '[]' }};
+            
+            // 提取数据
+            const labels = detectionData.map(d => d.name);
+            const counts = detectionData.map(d => d.count);
+            
+            // 生成随机颜色
+            const generateColors = (count) => {
+                const colors = [];
+                for (let i = 0; i < count; i++) {
+                    colors.push(`hsl(${Math.random() * 360}, 70%, 60%)`);
+                }
+                return colors;
+            };
+            
+            const backgroundColors = generateColors(labels.length);
+            const borderColors = backgroundColors.map(color => color.replace('60%', '80%'));
+            
+            // 柱状图
+            const barCtx = document.getElementById('detection-bar-chart').getContext('2d');
+            new Chart(barCtx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: '检测数量',
+                        data: counts,
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: '检测数量'
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: '交通标志类别'
+                            },
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: '交通标志检测结果柱状图'
+                        }
+                    }
+                }
+            });
+            
+            // 饼图
+            const pieCtx = document.getElementById('detection-pie-chart').getContext('2d');
+            new Chart(pieCtx, {
+                type: 'pie',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: '检测数量',
+                        data: counts,
+                        backgroundColor: backgroundColors,
+                        borderColor: borderColors,
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                        },
+                        title: {
+                            display: true,
+                            text: '交通标志检测结果饼图'
+                        }
+                    }
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>
