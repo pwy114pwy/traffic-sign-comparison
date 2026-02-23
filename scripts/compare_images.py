@@ -29,6 +29,10 @@ import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 from ultralytics import YOLO, RTDETR
 
+
+# 设置中文字体
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus'] = False
 # ============================================================
 # 配置
 # ============================================================

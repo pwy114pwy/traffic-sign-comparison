@@ -2,6 +2,23 @@
 
 本项目是一个基于 **YOLOv8** 和 **RT-DETR** (Real-Time Detection Transformer) 的交通标志实时检测系统。系统不仅具备强大的双模型性能对比与评估能力，还配备了易于使用的交互式 Web 界面，支持本地保存图片上传、图片 URL 直接提取和上传视频文件进行实时逐帧预测。
 
+## 🖼️ 模型对比效果
+
+<div align="center">
+  <img src="etc/eval_results/compare_grid.png" width="800px" alt="模型检测效果对比">
+  <p>图 1：模型检测效果对比</p>
+</div>
+
+<div align="center">
+  <img src="etc/eval_results/comparison_bar.png" width="800px" alt="模型性能对比">
+  <p>图 2：模型性能对比</p>
+</div>
+
+<div align="center">
+  <img src="etc/eval_results/speed_comparison.png" width="800px" alt="模型推理速度对比">
+  <p>图 3：模型推理速度对比</p>
+</div>
+
 ## ✨ 核心特性
 
 - **多模型支持与无缝切换**：集成了以 CNN 为基础的 YOLOv8 和以 Transformer 架构为基础的 RT-DETR 两种目标检测架构，方便进行多维度的模型验证、性能对比评估。
