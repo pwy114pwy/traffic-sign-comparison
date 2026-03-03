@@ -737,3 +737,49 @@ KeyError: 8164
 2026-02-23 00:22:00,648 - __main__ - INFO - 图片检测完成: 1 个目标, 耗时 0.236s
 2026-02-23 00:22:00,682 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:22:00] "POST /predict HTTP/1.1" 200 -
 2026-02-23 00:22:01,031 - werkzeug - INFO - 127.0.0.1 - - [23/Feb/2026 00:22:01] "GET /static/results/00006.png HTTP/1.1" 200 -
+2026-03-01 22:01:18,804 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp_yolov8/weights/best.pt
+2026-03-01 22:01:18,804 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-03-01 22:01:18,805 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-03-01 22:01:18,805 - __main__ - INFO - ⏳ 正在加载模型 [YOLO]: runs/train/exp_yolov8/weights/best.pt
+2026-03-01 22:01:19,461 - __main__ - INFO - ✅ 模型加载成功: YOLO
+2026-03-01 22:01:19,466 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-03-01 22:01:19,487 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-03-01 22:01:19,488 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-01 22:01:29,461 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:29] "GET / HTTP/1.1" 200 -
+2026-03-01 22:01:29,882 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-03-01 22:01:46,332 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.376s
+2026-03-01 22:01:46,373 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:46] "POST /predict HTTP/1.1" 200 -
+2026-03-01 22:01:46,951 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:46] "GET /static/results/ea592884470048f5a642700fc16b47c7950efea5.png HTTP/1.1" 200 -
+2026-03-01 22:01:49,190 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:49] "GET / HTTP/1.1" 200 -
+2026-03-01 22:01:58,174 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.317s
+2026-03-01 22:01:58,177 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:58] "POST /predict HTTP/1.1" 200 -
+2026-03-01 22:01:58,246 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:01:58] "GET /static/results/未标题-1.png HTTP/1.1" 200 -
+2026-03-01 22:02:05,990 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:02:05] "GET / HTTP/1.1" 200 -
+2026-03-01 22:12:24,696 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.350s
+2026-03-01 22:12:24,698 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:12:24] "POST /predict HTTP/1.1" 200 -
+2026-03-01 22:12:24,792 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:12:24] "GET /static/results/未标题-1.png HTTP/1.1" 200 -
+2026-03-01 22:12:53,281 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.220s
+2026-03-01 22:12:53,283 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:12:53] "POST /predict HTTP/1.1" 200 -
+2026-03-01 22:12:53,331 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:12:53] "GET /static/results/未标题-1.png HTTP/1.1" 200 -
+2026-03-01 22:13:48,181 - __main__ - INFO - 📦 WEIGHTS_PATH : runs/train/exp/weights/best.pt
+2026-03-01 22:13:48,182 - __main__ - INFO - 📤 UPLOAD_FOLDER: web/static/uploads
+2026-03-01 22:13:48,182 - __main__ - INFO - 📥 RESULT_FOLDER: web/static/results
+2026-03-01 22:13:48,182 - __main__ - INFO - ⏳ 正在加载模型 [RTDETR]: runs/train/exp/weights/best.pt
+2026-03-01 22:13:50,813 - __main__ - INFO - ✅ 模型加载成功: RTDETR
+2026-03-01 22:13:50,816 - __main__ - INFO - 🚀 启动 RT-DETR Web 服务: 0.0.0.0:5001
+2026-03-01 22:13:50,834 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://198.18.0.1:5001
+2026-03-01 22:13:50,835 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-03-01 22:13:55,199 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:13:55] "GET / HTTP/1.1" 200 -
+2026-03-01 22:14:01,819 - __main__ - INFO - 图片检测完成: 0 个目标, 耗时 0.891s
+2026-03-01 22:14:01,849 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:14:01] "POST /predict HTTP/1.1" 200 -
+2026-03-01 22:14:02,265 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:14:02] "GET /static/results/未标题-1.png HTTP/1.1" 200 -
+2026-03-01 22:14:05,934 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:14:05] "GET / HTTP/1.1" 200 -
+2026-03-01 22:14:19,529 - __main__ - INFO - 图片检测完成: 5 个目标, 耗时 0.951s
+2026-03-01 22:14:19,531 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:14:19] "POST /predict HTTP/1.1" 200 -
+2026-03-01 22:14:19,589 - werkzeug - INFO - 127.0.0.1 - - [01/Mar/2026 22:14:19] "GET /static/results/未标题-1.png HTTP/1.1" 200 -

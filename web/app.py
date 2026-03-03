@@ -106,11 +106,11 @@ def run_detection(img0: np.ndarray, conf_thres: float, iou_thres: float):
     """
     t0 = time.time()
     results = model.predict(
-        img0,           # 传入原始尺寸，不做预放大
-        conf=conf_thres,
-        iou=iou_thres,
-        verbose=False,
-        save=False,
+        img0,           # 输入原始 BGR 图像（通常是 cv2 读取的格式）。
+        conf=conf_thres,# 置信度阈值：模型对自己判断把握低于此值的框会被过滤掉。
+        iou=iou_thres,  # 交并比阈值：用于非极大值抑制（NMS），消除重叠过高的重复框。
+        verbose=False,  # 设置为 False，不在终端打印推理细节（如“1 person, 2 cars”）。
+        save=False,     # 不自动将预测后的图片保存到硬盘，节省磁盘 IO 耗时。
     )
     inference_time = time.time() - t0
 
@@ -124,7 +124,7 @@ def run_detection(img0: np.ndarray, conf_thres: float, iou_thres: float):
     display_img, _ = maybe_upscale(result.plot(line_width=lw, font_size=8))
 
     # 统计
-    boxes      = result.boxes
+    boxes      = result.boxes  # 获取所有的检测框对象。
     class_ids  = boxes.cls.cpu().numpy().astype(int) if boxes is not None else []
     confs      = boxes.conf.cpu().numpy()             if boxes is not None else []
     names_list = result.names   # dict: id -> name
