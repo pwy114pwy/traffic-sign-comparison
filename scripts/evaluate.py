@@ -17,6 +17,7 @@ scripts/evaluate.py —— 双模型性能对比评估脚本
 """
 
 import os
+from typing import Optional
 import sys
 import time
 import random
@@ -43,13 +44,13 @@ from ultralytics import YOLO, RTDETR
 # ============================================================
 ROOT       = Path(__file__).resolve().parents[1]
 DATA_YAML  = ROOT / "data" / "gtsrb.yaml"
-OUTPUT_DIR = ROOT / "etc" / "eval_results"
+OUTPUT_DIR = ROOT / "etc" / "eval_results_epoch6"
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 # 模型列表：(显示名称, 权重路径, 模型类)
 MODELS = [
     ("YOLOv8",   str(ROOT / "runs" / "train" / "exp_yolov8" / "weights" / "best.pt"), YOLO),
-    ("RT-DETR",  str(ROOT / "runs" / "train" / "exp"        / "weights" / "best.pt"), RTDETR),
+    ("RT-DETR",  str(ROOT / "runs" / "train" / "exp_rtdetr_epoch6" / "weights" / "best.pt"), RTDETR),
 ]
 
 IMG_SIZE   = 640
@@ -160,6 +161,14 @@ def eval_model(name: str, weights: str, model_cls, data_yaml: str) -> dict:
 
     speed_ms = val_result.speed.get("inference", 0.0)
 
+    # 提取 P-R 曲线数据（每类别在各置信度阈值下的精确率 / 召回率，shape [nc, 1000]）
+    try:
+        p_curve = np.array(val_result.box.p_curve)  # (nc, 1000)
+        r_curve = np.array(val_result.box.r_curve)  # (nc, 1000)
+    except AttributeError:
+        p_curve = None
+        r_curve = None
+
     metrics = {
         "name":       name,
         "weights":    weights,
@@ -169,6 +178,8 @@ def eval_model(name: str, weights: str, model_cls, data_yaml: str) -> dict:
         "map5095":    map5095,
         "speed_ms":   speed_ms,
         "fps":        1000.0 / speed_ms if speed_ms > 0 else 0.0,
+        "p_curve":    p_curve,
+        "r_curve":    r_curve,
     }
 
     print(f"  Precision : {mp:.4f}")
@@ -222,6 +233,61 @@ def plot_bar_comparison(results: list):
     return str(out)
 
 
+def plot_pr_curve_comparison(results: list):
+    """生成各模型 Precision-Recall 曲线叠加对比图。"""
+    model_colors = ["#4C72B0", "#DD8452", "#55A868", "#C44E52"]
+
+    fig, ax = plt.subplots(figsize=(9, 6))
+    has_data = False
+
+    for i, res in enumerate(results):
+        p_curve = res.get("p_curve")
+        r_curve = res.get("r_curve")
+
+        if p_curve is None or r_curve is None:
+            print(f"  ⚠️  {res['name']} 无曲线数据，跳过")
+            continue
+
+        # 对所有类别取均值 → shape (1000,)
+        mean_p = np.array(p_curve).mean(axis=0)
+        mean_r = np.array(r_curve).mean(axis=0)
+
+        # 按 Recall 升序排列，曲线更平滑
+        sort_idx   = np.argsort(mean_r)
+        mean_r_srt = mean_r[sort_idx]
+        mean_p_srt = mean_p[sort_idx]
+
+        ax.plot(
+            mean_r_srt, mean_p_srt,
+            color=model_colors[i % len(model_colors)],
+            linewidth=2.5,
+            label=f"{res['name']}  (mAP@0.5={res['map50']:.3f})",
+        )
+        has_data = True
+
+    if not has_data:
+        print("  ⚠️  所有模型均无曲线数据，跳过 P-R 图生成")
+        plt.close()
+        return None
+
+    ax.set_xlabel("Recall", fontsize=12)
+    ax.set_ylabel("Precision", fontsize=12)
+    ax.set_xlim(0, 1)
+    ax.set_ylim(0, 1.05)
+    ax.set_title("Precision-Recall Curve — GTSRB (All Classes Mean)", fontsize=14, fontweight="bold")
+    ax.legend(fontsize=11)
+    ax.grid(alpha=0.3)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+
+    out = OUTPUT_DIR / "pr_curve.png"
+    plt.tight_layout()
+    plt.savefig(out, dpi=150)
+    plt.close()
+    print(f"\n📈 P-R 曲线已保存: {out}")
+    return str(out)
+
+
 def plot_speed_comparison(results: list):
     """生成速度对比图。"""
     names    = [r["name"] for r in results]
@@ -268,7 +334,7 @@ def plot_speed_comparison(results: list):
 # 报告
 # ============================================================
 
-def generate_report(results: list, bar_img: str, speed_img: str, n_samples: int):
+def generate_report(results: list, bar_img: str, speed_img: str, pr_img: Optional[str], n_samples: int):
     """生成 Markdown 格式评估报告。"""
     lines = []
     lines.append("# 交通标志检测模型性能对比报告\n")
@@ -290,6 +356,9 @@ def generate_report(results: list, bar_img: str, speed_img: str, n_samples: int)
     lines.append(f"![精度对比]({bar_img})\n")
     lines.append(f"\n## 速度对比图\n")
     lines.append(f"![速度对比]({speed_img})\n")
+    if pr_img:
+        lines.append(f"\n## Precision-Recall 曲线\n")
+        lines.append(f"![PR曲线]({pr_img})\n")
 
     lines.append("\n## 结论分析\n")
     if len(results) >= 2:
@@ -351,7 +420,8 @@ def main():
     # 生成图表和报告
     bar_img   = plot_bar_comparison(results)
     speed_img = plot_speed_comparison(results)
-    report    = generate_report(results, bar_img, speed_img, n_samples)
+    pr_img    = plot_pr_curve_comparison(results)
+    report    = generate_report(results, bar_img, speed_img, pr_img, n_samples)
 
     # 清理临时目录
     tmp_dir = ROOT / "etc" / "_eval_tmp"

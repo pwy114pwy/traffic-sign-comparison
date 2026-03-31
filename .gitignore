@@ -2,3 +2,4 @@ datasets/
 web/static/
 runs/
 *.pt
+etc/
